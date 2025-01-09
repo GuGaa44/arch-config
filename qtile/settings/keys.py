@@ -49,14 +49,13 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
 
     # ------------ App Configs ------------
 
-    # Menu
+    # VS code
     ([mod], "c", lazy.spawn("code")),
     
-    
-    # Menu
+    # Rofi
     ([mod], "m", lazy.spawn("rofi -show drun")),
 
-    # Window Nav
+    # Rofi Window Nav
     ([mod, "shift"], "m", lazy.spawn("rofi -show")),
 
     # Browser
