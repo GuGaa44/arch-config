@@ -83,7 +83,7 @@ primary_widgets = [
 
     powerline('color3', 'color4'),
 
-    icon(bg="color3", text='󰻠 '),  
+    icon(bg="color3", text='󰻠 '), 
     
     widget.CPU(
         **base(bg='color3'), 
