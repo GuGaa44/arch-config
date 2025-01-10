@@ -61,6 +61,7 @@ def workspaces():
         separator(),
     ]
 
+
 primary_widgets = [
     *workspaces(),
 
@@ -82,10 +83,11 @@ primary_widgets = [
 
     powerline('color3', 'color4'),
 
-    icon(bg="color3", text=' '),  # Icon: nf-fa-feed
+    icon(bg="color3", text='󰻠 '),  
     
-    widget.Net(**base(bg='color3'), 
-        interface='enp11s0', #cable
+    widget.CPU(
+        **base(bg='color3'), 
+        #interface='enp11s0', #cable
         #interface='enp0s20f0u3', #USB
     ),
 
@@ -97,7 +99,7 @@ primary_widgets = [
 
     powerline('color1', 'color2'),
 
-    icon(bg="color1", fontsize=17, text='󱦟 '), # Icon: nf-mdi-calendar_clock
+    icon(bg="color1", fontsize=17, text=' '), # Icon: nf-mdi-calendar_clock
 
     widget.Clock(**base(bg='color1'), format='%d/%m/%Y - %H:%M '),
 
@@ -105,6 +107,8 @@ primary_widgets = [
 
     widget.Systray(background=colors['dark'], padding=5),
 ]
+
+
 
 
 secondary_widgets = [
