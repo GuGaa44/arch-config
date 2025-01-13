@@ -25,7 +25,7 @@
   white = '0xd1e5ed'
 
 [font]
-  size = 14.00
+  size = 12.00
   [font.bold]
   family = 'UbuntuMono Nerd Font'
 

@@ -78,15 +78,9 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     # ------------ Hardware Configs ------------
 
     # Volume
-    ([], "XF86AudioLowerVolume", lazy.spawn(
-        "pactl set-sink-volume @DEFAULT_SINK@ -5%"
-    )),
-    ([], "XF86AudioRaiseVolume", lazy.spawn(
-        "pactl set-sink-volume @DEFAULT_SINK@ +5%"
-    )),
-    ([], "XF86AudioMute", lazy.spawn(
-        "pactl set-sink-mute @DEFAULT_SINK@ toggle"
-    )),
+    ([], "XF86AudioLowerVolume", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ -5%")),
+    ([], "XF86AudioRaiseVolume", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ +5%")),
+    ([], "XF86AudioMute", lazy.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle")),
 
     # Brightness
     ([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +10%")),
